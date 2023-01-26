@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(223, 222, 158);
+}
+nav{
+    width: 100%;
+    background:rgb(255, 255, 255);
+    overflow: auto;
+    padding: 5px;
+}
+.nav-items{
+    margin: 0 0 0 1100px;
+    list-style: none;
+    text-decoration: none;
+}
+li{
+    float: left;
+}
+.logo img{
+    position: absolute; 
+    height: 75px;  
+    margin-left: 15px; 
+}
+nav a{
+    width: 100%;
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+    font-family: Arial;
+    color: #000000;
+    text-align: center;
+}
+nav a:hover{
+    background: rgb(18, 179, 18);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.quote h1{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(18, 179, 18);
+    font-family: sans-serif;
+}
+span{
+    color: rgb(18, 179, 18);
+}
+.content p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    margin-top: 40px;
+}
+#assistance{
+    margin-left: 27%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: none;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 14px 40px;
+    /*An outline is a line drawn outside the element's border.*/
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    color: rgb(18, 179, 18);
+}
+#donate{
+    margin-left: 10%;
+    background: none;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 14px 100px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    color: rgb(18, 179, 18);
+}
+#apply{
+    margin-left: 40%;
+    margin-top: 10px;
+    font-size: 20px;
+    background: none;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 14px 110px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    color: rgb(18, 179, 18);
+}
+#assistance:hover, #donate:hover, #apply:hover{
+    background: rgb(18, 179, 18);
+    color: white;
+}

@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(223, 222, 158);
+}
+nav{
+    width: 100%;
+    background:rgb(255, 255, 255);
+    overflow: auto;
+    padding: 5px;
+}
+.nav-items{
+    margin: 0 0 0 1100px;
+    list-style: none;
+    text-decoration: none;
+}
+li{
+    float: left;
+}
+.logo img{
+    position: absolute; 
+    height: 75px;  
+    margin-left: 15px; 
+}
+nav a{
+    width: 100%;
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+    font-family: Arial;
+    color: #000000;
+    text-align: center;
+}
+nav a:hover{
+    background: rgb(18, 179, 18);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.box{
+    width: 700px;
+    padding: 5px;
+    margin-top: 60px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-20%, -50%);
+    text-align: center;
+    border-radius: 30px;
+    border: 3px solid rgb(255, 255, 255);
+}
+.box h1{
+    color: rgb(18, 179, 18);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.box input[type = "text"], .box input[type = "password"], .box input[type = "number"], .box input[type = "email"]{
+    border: 0;
+    background: none;
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 10px;
+    width: 260px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type = "text"]:focus, .box input[type = "password"]:focus, .box input[type = "number"]:focus, .box input[type = "email"]:focus{
+    width: 350px;
+    border-color: rgb(18, 179, 18);
+}
+.box input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 14px 120px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    color: rgb(18, 179, 18);
+}
+.box input[type = "submit"]:hover{
+    background: rgb(18, 179, 18);
+    color: white;
+}
+
+.formParagraph{
+    font-size: 18px;
+    text-align: left;
+    margin-right:50px;
+    margin-left: 70px;
+    font-family: sans-serif;
+    display: inline-block;
+}
+h4{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 80px;
+    font-weight: 500;
+    
+}
+.sideParagraph{
+    margin-left: 800px;
+    margin-top: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 2;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.title{
+    width: 240px;
+    text-align: right;
+    margin-left: 950px;
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: rgb(18, 179, 18);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+#major{
+    display: block;
+}
+#userFile{
+    color: rgb(18, 179, 18);
+}
+#userFile:hover{
+    cursor: pointer;
+}

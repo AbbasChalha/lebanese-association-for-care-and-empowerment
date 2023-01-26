@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /*background: rgb(223, 222, 158);*/
+    background: linear-gradient(45deg, #CCFFFF, #FFCCCC);
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    background:rgb(255, 255, 255);
+    overflow: auto;
+    padding: 5px;
+}
+.nav-items{
+    margin: 0 0 0 720px;
+    list-style: none;
+    text-decoration: none;
+}
+li{
+    float: left;
+}
+.logo img{
+    position: absolute; 
+    height: 75px;  
+    margin-left: 15px; 
+}
+nav a{
+    width: 100%;
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+    font-family: Arial;
+    color: #000000;
+    text-align: center;
+}
+nav a:hover{
+    background: rgb(18, 179, 18);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.wrapper{
+    margin-top: 5%;
+}
+.wrapper h2{
+    font-size: 52px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: rgb(18, 179, 18);
+}
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+.team .team_member{
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+}
+.team .team_member h3{
+    color: rgb(18, 179, 18);
+    font-size: 26px;
+    margin-top: 50px;
+}
+.team .team_member p.role{
+    color: #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0px;
+}
+.team .team_member .team_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+}
+.team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}

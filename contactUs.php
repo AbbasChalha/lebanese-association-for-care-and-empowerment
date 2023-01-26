@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="contactUs.css?v=<?php echo time();?>">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="logo"><a href="index.html"><img src="logo.png"></a></div>
+    <nav>
+        <ul class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html">Our Members</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.php">Contact Us</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="signUp.php">Sign Up</a></li>
+        </ul>
+    </nav>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>4786 Achrafieh Road</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+961-01-445-566</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>lace-lb@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="contactUs.php" method="POST">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input name="fname" type="text" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input name="lname" type="text" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input name="email" type="email" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <input name="phone" type="number" required>
+                        <span>Phone Number</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="msg" id="" cols="30" rows="4" required></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input name="contact" type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<?php 
+    $con = mysqli_connect("localhost","root");
+    if(!$con)
+        die("Could not connect to the server. " .mysqli_connect_error());
+    
+    $DBcon = mysqli_select_db($con, "isd");
+    if(!$DBcon)
+        die("Could not find the database");
+    extract($_POST);
+    //Insert a record
+    if(isset($contact)){
+        $dbI = mysqli_query($con,"INSERT INTO contactus(first_name, last_name, email, phone, msg)
+        VALUES('$fname' , '$lname' ,'$email', $phone ,'$msg')")
+        or die("Could not insert ".mysqli_error($con));
+    }
+    mysqli_close($con);
+?>

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    background:rgb(255, 255, 255);
+    overflow: auto;
+    padding: 5px;
+}
+.nav-items{
+    margin: 0 0 0 720px;
+    list-style: none;
+    text-decoration: none;
+}
+li{
+    float: left;
+}
+.logo img{
+    position: absolute; 
+    height: 75px;  
+    margin-left: 15px; 
+}
+nav a{
+    width: 100%;
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+    font-family: Arial;
+    color: #000000;
+    text-align: center;
+}
+nav a:hover{
+    background: rgb(18, 179, 18);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.contact{
+    position: relative;
+    padding: 50px 100px;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(223, 222, 158);
+}
+.contact .content h2{
+    font-size: 36px;
+    margin-left: 120px;
+    border-bottom: 3px solid #fff;
+    color: rgb(18, 179, 18);
+}
+.contact .content p{
+    color: rgb(18, 179, 18);
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 30px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: rgb(18, 179, 18);
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 3px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 3px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+/*element1~element2	p ~ ul	Selects every <ul> element that is preceded by a <p> element
+valid means if the input entered is valid (correct)*/
+.contactForm .inputBox input:focus ~ span, .contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span, .contactForm .inputBox textarea:valid ~ span
+{
+    color: rgb(18, 179, 18);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: rgb(18, 179, 18);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.contactForm .inputBox input[type="submit"]:hover{
+    background: #000000;
+}
