@@ -1,8 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-/*     background: rgb(223, 222, 158); */
-    background: linear-gradient(45deg, #CCFFFF, #FFCCCC);
+    background: rgb(223, 222, 158);
+/*     background: linear-gradient(45deg, #CCFFFF, #FFCCCC); */
 }
 nav{
     width: 100%;
